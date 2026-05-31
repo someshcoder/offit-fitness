@@ -64,7 +64,7 @@ const HeroSection = () => {
       {/* Content */}
       <div
         ref={ref}
-        className={`relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center min-h-screen py-20 md:py-0 ${isVisible ? 'section-visible' : 'section-hidden'
+        className={`relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-start md:justify-center min-h-screen pt-4 md:pt-0 pb-10 ${isVisible ? 'section-visible' : 'section-hidden'
           }`}
       >
         <div className="max-w-2xl">
