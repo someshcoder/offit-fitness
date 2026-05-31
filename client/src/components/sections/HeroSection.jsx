@@ -64,9 +64,8 @@ const HeroSection = () => {
       {/* Content */}
       <div
         ref={ref}
-        className={`relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center min-h-screen py-20 md:py-0 ${
-          isVisible ? 'section-visible' : 'section-hidden'
-        }`}
+        className={`relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center min-h-screen py-20 md:py-0 ${isVisible ? 'section-visible' : 'section-hidden'
+          }`}
       >
         <div className="max-w-2xl">
           {/* Badge */}
@@ -125,14 +124,15 @@ const HeroSection = () => {
           </div>
 
           {/* Trust Pills - Updated */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 max-w-xl">
+          {/* Trust Pills - Compact Version */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 max-w-lg">
             {trustPills.map((pill) => (
               <div
                 key={pill.label}
-                className="flex items-center gap-2 bg-white/6 border border-white/10 rounded-full px-4 py-2 hover:bg-white/10 transition-all duration-300"
+                className="flex items-center gap-1.5 bg-white/6 border border-white/10 rounded-full px-3 py-1.5 hover:bg-white/10 transition-all duration-300"
               >
-                <span className="text-lg">{pill.icon}</span>
-                <span className="text-sm text-white/80 font-medium">
+                <span className="text-base">{pill.icon}</span>
+                <span className="text-xs text-white/80 font-medium leading-tight">
                   {pill.label}
                 </span>
               </div>
