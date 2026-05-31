@@ -1,0 +1,14 @@
+{
+  "name": "offfit-fitness",
+  "version": "1.0.0",
+  "description": "OFFFIT - Women-Only Live Fitness Community",
+  "private": true,
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "install-all": "cd client && npm install && cd ../server && npm install",
+    "dev": "echo Run 'npm run client' and 'npm run server' in separate terminals"
+  },
+  "author": "OFFFIT",
+  "license": "ISC"
+}
