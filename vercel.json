@@ -1,18 +1,18 @@
 {
-  "buildCommand": "cd client && npm run build",
+  "buildCommand": "npm run build",
   "outputDirectory": "client/dist",
   "env": {
-    "NODE_ENV": "production",
-    "PORT": "5000"
+    "NODE_ENV": "production"
   },
-  "rewrites": [
+  "routes": [
     {
-      "source": "/api/:path*",
-      "destination": "/api/:path*"
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
     },
     {
-      "source": "/((?!api).*)",
-      "destination": "/index.html"
+      "src": "/(.*)",
+      "dest": "/index.html",
+      "status": 200
     }
   ]
 }
