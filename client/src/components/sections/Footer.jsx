@@ -117,7 +117,7 @@ const Footer = () => {
         {/* Divider */}
         <div className="border-t border-white/10 pt-8">
           <p className="text-center text-text-muted text-sm">
-            © 2025 OFFFIT. All rights reserved.
+            © 2025 OFFFIT. All rights reserved-Made by Somesh.
           </p>
         </div>
       </div>
