@@ -37,7 +37,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2" onClick={(e) => scrollToSection(e, '#home')}>
             <span className="text-2xl md:text-3xl font-extrabold font-[family-name:var(--font-heading)] gradient-text tracking-tight">
-              OFFFIT
+              WOMEN'S FITNESS
             </span>
           </a>
 
